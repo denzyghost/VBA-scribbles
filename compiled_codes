@@ -1,0 +1,184 @@
+Info about....
+C:\Users\\AppData\Local\SeleniumBasic
+
+Splash Screen // Gif Animado
+:v Códigos>>
+
+Selection.Copy
+               
+'Selection.PasteSpecial paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+:=False, Transpose:=False
+
+
+
+Acrive Full screen
+Application.DisplayFullScreen = False
+
+¹¹¹
+'''
+
+Unprotect
+ActiveSheet.Unprotect
+
+Protect:
+ ActiveSheet.Protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+'''
+Workbook Open:
+
+Private Sub inicio()
+
+Application.DisplayAlerts = False
+Application.DisplayFormulaBar = True
+
+End Sub
+
+  Private Sub Workbook_Open()
+
+ Application.ScreenUpdating = False
+ Application.DisplayFullScreen = True
+ Application.DisplayFormulaBar = False
+ ActiveWindow.DisplayWorkbookTabs = False
+ Worksheets("Name").ScrollArea = "A1:Z40"
+ Application.ScreenUpdating = True
+ End Sub
+¹¹¹
+
+Workbook rename:
+ Sheets("Planilha2").Name = "rename"
+
+Workbook save:
+  ActiveWorkbook.Save
+
+Sheet select:
+  Sheets("Planilha2").Select
+
+Workbook select:
+Windows("PLATAFORMA DE EMENTÁRIO.xlsm").Activate
+
+Workbook previous:
+ActiveSheet.Previous.Select
+¹¹¹
+
+Timer:
+  Tempo = Now()
+ 'code here >>
+MsgBox " -execução finalizada- Tempo gasto: " & Now() - Tempo
+¹¹¹   
+
+Loop:
+     Dim numb As String
+    numb = InputBox("Informe a quantidade de rotação:", "loop replicate :c", "Digite um número!!")
+    For Counter = 1 To numb - 2
+'code here
+ Next
+¹¹¹
+
+Code for manipulation web:
+''
+Download do SeleniumBasic v2.0.9.0:
+https://github.com/florentbr/SeleniumBasic/releases
+C:\Users\chest\AppData\Local\SeleniumBasic
+Find:
+C:\Users\Name of this pc\AppData\Local\SeleniumBasic
+C:\Users\chest\AppData\Local\SeleniumBasic
+
+Download do ChromeDriver:
+https://chromedriver.chromium.org/downloads
+''
+
+    Dim login As WebElement
+    Dim senha As WebElement
+ hisilva = InputBox("Informe un dado", "Buscar", "Insira uma informação válida!!")
+    Set driver = New ChromeDriver
+
+    
+    driver.Get "http://app.taxsafe.com.br/Login"
+    driver.FindElementByName("Username").SendKeys "nun.mum@xnx.com.br"
+    driver.FindElementByName("Password").SendKeys "pass"
+    driver.Wait 1200
+    driver.FindElementById("acess").Click
+
+Extract:
+       Set valor = driver.FindElementByXPath("/html/body/div[3]/div/div/div[2]/div[2]/form[2]/span/span/span[2]")
+       Sheets("undef").Select
+       'driver.Wait Now + TimeValue("00:00:02")
+       Range("E8").Select
+       ActiveCell.Value = valor.Text
+
+If for web:
+ ''
+ Dim oCheck As New By
+ ''Dim oCheck As By ' Objeto será usado no método.
+Const sBtnPath As String = "/html/body/div[17]/div/a[1]/span"
+
+If driver.IsElementPresent(oCheck.XPath(sBtnPath)) Then
+
+    driver.Wait 3000
+     driver.FindElementByXPath("/html/body/div[17]/div/a[1]/span").Click
+   driver.Wait 5000
+  
+ Else
+   driver.Wait 2000
+   
+End If
+
+Quit:
+    driver.Window.Maximize
+    driver.FindElementByXPath("/html/body/div[2]/form[1]/div[3]/div/div/a[2]/strong").Click
+    driver.Wait 1000
+    driver.Quit
+¹¹¹
+
+Sendkeys para alterar de app:
+  Application.SendKeys ("%{TAB}")
+¹¹¹
+
+Delete Sheet:
+    Sheets("uwu_08.07.2021").Select
+    ActiveWindow.SelectedSheets.delete
+¹¹¹
+
+Open file:
+
+Workbook = Application.GetOpenFilename(, , "Abrir arquivo")
+Workbooks.Open Workbook
+¹¹¹
+
+Create workbook:
+Set Work_Separation = Workbooks.Add
+Set Work_Separation = ActiveWorkbook
+Sheets(1).Name = "Work_sheet_table"
+
+Set Work_Separation = ActiveWorkbook
+ActiveWorkbook.Sheets.Add.Name = ("NEWTYPE")
+
+ActiveWorkbook.SaveAs ("Workbook_temporary")
+¹¹¹
+
+Código de contagem:
+     Dim count As Integer
+
+     Let count = 0
+
+     For Each cell In Selection
+        Let count = count + 1
+    Next cell
+    'MsgBox count & " item(ns) foram selecionados por você!"
+''
+''''new Code Here!!
+
+Dim undef As String
+ Dim Looop As String
+    undef = count
+¹¹¹
+Código para copiar um arquivo para outro (outro novo arquivo):
+   Sheets("Sheet-by UF").Select
+    Sheets("Sheet-by UF").Copy
+    Sheets("Sheet-by UF").Select
+    Sheets("Sheet-by UF").Name = "sheet_by_uf"
+    Range("A8").Select
+¹¹¹
+    Rolar asabas
+:ActiveWindow.ScrollWorkbookTabs Sheets:=-1
+
+¹¹¹
